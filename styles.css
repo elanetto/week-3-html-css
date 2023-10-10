@@ -1,0 +1,101 @@
+a:hover {
+    background-color: yellow;
+}
+
+/* This selects EVERYTHING: An universer selecter */
+* {
+color: red;
+font-size: 28px;
+}
+
+/* Tag selector: */
+p {
+    color: blue;
+}
+
+
+h1 {
+    color: blueviolet;
+}
+
+
+
+/* class selector */
+.highlight {
+color: green;
+}
+
+/* id selector: Write # */
+#header {
+background-color: yellow;
+}
+/* an id can only be used once on an html page */
+
+article p, h2 {
+    color: pink;
+}
+
+/* child selector */
+/* parent > child */
+ul > li {
+    list-style-type: square;
+}
+
+/* General sibling selector */
+h2 ~ p {
+    background-color: peachpuff;
+}
+
+/* Sibling selector */
+/* Only selects the element immediatly after it */
+h2 + p {
+    background-color: aqua;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    color: black;
+    font-size: 18px;
+    border-color: brown;
+}
+
+input[type="submit"] {
+    color: white;
+    font-size: 16px;
+    background-color: brown;
+    border-radius: 6px;
+}
+
+/* psuedo-class */
+ul li:first-child {
+background-color: blueviolet;
+}
+
+ul li:last-child {
+    background-color: darkolivegreen;
+    }
+
+    /* write the number of the child */
+ul li:nth-child(2) {
+    background-color: yellow;
+}
+
+/* Psuedo-elements ::before and ::after */
+p::before {
+    content: "🌶️ ";
+}
+
+p::after {
+    content:" 🍻" ;
+}
+
+/* Grouping selector */
+h1, h2, p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Combining selector */
+p.dummy::first-letter {
+    font-size: 76px;
+    initial-letter: 4 6;
+}
