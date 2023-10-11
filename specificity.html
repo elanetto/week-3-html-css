@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+       :: Specificity ::
+    </title>
+    <style>
+
+        /*0, 1, 0, 0*/
+        #header-id {
+            color: blue;
+        }
+
+         /*0, 0, 1, 0*/
+        .header {
+            color: green;
+        }
+
+         /*0, 0, 0, 1*/
+        h2 {
+            color: red !important;
+        }
+
+    </style>
+</head>
+<body>
+    <h2 id="header-id" class="header">
+        This is a header
+    </h2>
+    <p id="paragraph-id" class="paragraph">
+        A lot of text goes here. This is a paragtraph!
+        Can you believe this? It is absurd! why would you do this?
+        Especially since you could simply copy som Lorem Ipsum fot this. 
+        You do not need to write this yourself. Duh!
+    </p>
+</body>
+</html>

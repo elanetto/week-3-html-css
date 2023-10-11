@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::: Psuedo Classes :::</title>
+    <style>
+
+        button:hover {
+            background-color: red;
+        }
+
+        button:focus {
+            background-color: blue;
+        }
+
+        #email:disabled {
+            background-color: darkblue;
+        }
+
+        #name:required {
+            background-color: purple;
+        }
+/* 
+        li:nth-child(even) {
+            color: green;
+            background-color: yellow;
+        }
+
+        li:nth-child(odd) {
+            color: yellow;
+            background-color: green;
+        } */
+
+        li:nth-child(2n+1) {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" disabled>
+    </div>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+    </div>
+    <button type="submit" class="submit">
+        Click Me to Send me to heaven
+    </button>
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ul>
+    </div>
+</body>
+</html>
