@@ -14,16 +14,23 @@
         }
 
         header {
+            display: flex;
+            align-items: center;
             background-color: black;
             position: sticky;
             top: 0;
             border-radius: 8px;
-            padding: 8px 16px;
-            margin: 8px;
+            padding: 16px;
+            margin: 16px;
+            color: white;
         }
 
         header label {
             color: white;
+        }
+
+        body {
+            position: relative;
         }
 
 
@@ -31,15 +38,23 @@
             display: none;
             background-color: black;
             border-radius: 8px;
+            position: absolute;
+            top: 65px;
+            width: 100%;
+            left: 0px;
+            padding-left: 16px;
+            height: 100vh;
+            color: white;
         }
 
         nav a {
             color: white;
             text-decoration: none;
+
         }
 
         nav li {
-            padding: 8px 0;
+            padding: 16px 0;
         }
 
         label {
@@ -74,6 +89,13 @@
 
             nav {
             display: block;
+            position: static;
+            top 0px;
+            width: initial;
+            left: initial;
+            padding-left: 8px;
+            height: auto;
+            margin-left: auto;
             }
 
             header label {
@@ -109,6 +131,9 @@
 </head>
 <body>
     <header>
+        <div>
+            logo
+        </div>
         <input type="checkbox" name="" id="menu-checkbox">
         <label for="menu-checkbox"><i class="fa-solid fa-bars"></i></label>
         <nav>
